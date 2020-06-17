@@ -1,0 +1,103 @@
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+  margin-top: 120px;
+  letter-spacing: 1px;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  span {
+    color: #09ff09;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  ol {
+    font-size: 16px;
+
+    h2 {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    li {
+      list-style-type: decimal;
+      margin-top: 16px;
+    }
+  }
+
+  h2 {
+    margin-top: 26px;
+  }
+
+  .last-paragraph {
+    margin-bottom: 50px;
+  }
+}
+
+/* MEDIA QUERIES */
+
+/*----------------------------------
+
+              1000PX
+
+-----------------------------------*/
+@media (max-width: 1000px) {
+  .wrapper {
+    margin-top: 150px;
+  }
+}
+
+/* Add padding to text for devices below 814px */
+@media (max-width: 814px) {
+  .wrapper {
+    padding: 2%;
+  }
+}
+
+/* Reduce h1 size and add padding to ol, 425px and below */
+@media (max-width: 425px) {
+  .wrapper {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    ol {
+      padding-left: 4%;
+
+      h2,
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* Reduce h1 size and add padding to ol, 360px and below */
+@media (max-width: 360px) {
+  .wrapper {
+    ol {
+      padding-left: 5%;
+    }
+  }
+}
