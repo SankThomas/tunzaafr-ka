@@ -447,6 +447,17 @@ body .footer {
 
 /*----------------------------------
 
+              1250PX
+
+-----------------------------------*/
+@media (max-width: 1250px) {
+  .section-2 .functions > div:first-child img {
+    height: 72.44px;
+  }
+}
+
+/*----------------------------------
+
               1148PX
 
 -----------------------------------*/
@@ -458,6 +469,9 @@ body .footer {
     height: 700px;
   }
   .section-2 .functions > div:first-child img {
+    height: 66.6px;
+  }
+  .section-2 .functions > div:nth-child(3) img {
     height: 66.6px;
   }
 }
@@ -532,6 +546,12 @@ body .footer {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .section-2 .functions > div:first-child img {
+    height: 20%;
+  }
+  .section-2 .functions > div:nth-child(3) img {
+    height: 20%;
   }
   .section-2 .functions h3 {
     font-size: 26px;
