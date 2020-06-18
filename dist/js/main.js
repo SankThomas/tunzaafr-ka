@@ -1,6 +1,13 @@
 // Back to top button
 let button = document.getElementById('button');
 
+// Remove loading animation when the DOM Content is
+// fully loaded
+window.addEventListener('load', function () {
+  const loader = document.querySelector('.loader');
+  loader.style.display = 'none';
+});
+
 window.onscroll = function () {
   displayButton(), changeHeaderColor();
 };
