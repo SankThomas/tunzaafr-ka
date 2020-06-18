@@ -464,6 +464,23 @@ body .footer {
 
 /*----------------------------------
 
+              1073PX
+
+-----------------------------------*/
+@media (max-width: 1073px) {
+  #header .main-list li a {
+    font-size: 12px;
+  }
+  .section-2 .functions > div:nth-child(3) img {
+    height: 62.31px;
+  }
+  .section-2 .functions ol {
+    list-style-type: none;
+  }
+}
+
+/*----------------------------------
+
               1000PX
 
 -----------------------------------*/
