@@ -327,6 +327,53 @@ body {
 }
 
 /* MEDIA QUERIES */
+/*----------------------------------
+
+              1440PX
+
+-----------------------------------*/
+@media (max-width: 1440px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------------
+
+              1148PX
+
+-----------------------------------*/
+@media (max-width: 1148px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .section-1 {
+    height: 700px;
+  }
+
+  .section-2 {
+    .functions {
+      & > div:first-child {
+        img {
+          height: 66.6px;
+        }
+      }
+    }
+  }
+}
 
 /*----------------------------------
 
