@@ -26,7 +26,7 @@
   max-width: 900px;
   margin: auto;
   color: #fff;
-  margin-top: 120px;
+  margin-top: 30px;
   text-align: justify;
   letter-spacing: 1px;
 }
@@ -74,17 +74,6 @@
 }
 
 /* MEDIA QUERIES */
-/*----------------------------------
-
-              1000PX
-
------------------------------------*/
-@media (max-width: 1000px) {
-  .wrapper {
-    margin-top: 150px;
-  }
-}
-
 /* Add padding to text for devices below 814px */
 @media (max-width: 814px) {
   .wrapper {
