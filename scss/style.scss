@@ -5,10 +5,10 @@
 /*------------------------------------------------
 
 Note: I have used 1fr 1fr instead of 
-  repeat(2, 1fr) and so on for grid because 
-  the compiled css is giving me so many errors
+repeat(2, 1fr) and so on for grid because 
+the compiled css is giving me so many errors
 
---------------------------------------------------*/
+-------------------------------------------------*/
 
 // Esther 4:16
 // 0774822266
@@ -16,7 +16,7 @@ Note: I have used 1fr 1fr instead of
 /* Variables for dark theme */
 $primary-color: #09ff09;
 $secondary-color: #139613;
-$background-color-dark: rgba(0, 9, 26, 0.9);
+$background-color-dark: rgba(0, 9, 26, 0.902);
 $text-color-dark: #ffffff;
 $link-color-dark: #ffffff;
 $button-color: #02ca02;
@@ -183,24 +183,19 @@ body {
 
 --------------------------------------- */
 #header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  // position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
   opacity: 0.9;
   @include transition();
   z-index: 10;
 
-  a {
-    color: $link-color-dark;
-  }
-
   h1 {
-    font-size: 46px;
+    font-size: 56px;
+    text-align: center;
     letter-spacing: 2px;
-    padding: 0 0 10px 0;
     color: $text-color-dark;
   }
 
@@ -213,12 +208,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
-    padding-top: 23px;
+    padding-bottom: 10px;
 
     li {
       margin-right: 10px;
+      text-align: center;
 
       a {
+        color: $link-color-dark;
         font-size: 14px;
         letter-spacing: 1px;
 
@@ -242,17 +239,17 @@ body {
   margin: auto;
   position: relative;
   height: 690px;
-  top: 40%;
+  top: 25%;
   left: 0%;
-  transform: translate(0, 40%);
+  transform: translate(0, 25%);
   text-align: center;
 
   h1 {
-    font-size: 46px;
+    font-size: 50px;
   }
 
   p {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .btn {
@@ -277,7 +274,6 @@ body {
 .section-1 {
   color: $text-color-dark;
   text-align: center;
-  // background-color: rgba(0, 9, 26, 0.9);
   // background: url('../images/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
 
@@ -290,7 +286,8 @@ body {
 
   p {
     margin-top: 70px;
-    font-size: 20px;
+    font-size: 24px;
+    padding: 1%;
   }
 }
 
@@ -308,7 +305,7 @@ body {
   letter-spacing: 1px;
 
   h1 {
-    font-size: 30px;
+    font-size: 36px;
 
     span {
       color: $primary-color;
@@ -332,6 +329,15 @@ body {
       margin-top: 70px;
     }
 
+    h3 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
     img {
       height: 15%;
       width: 15%;
@@ -342,6 +348,8 @@ body {
     ol {
       display: grid;
       place-items: center;
+      font-size: 18px;
+      letter-spacing: 0;
       list-style-type: circle;
     }
 
@@ -394,6 +402,43 @@ body {
 }
 
 /* MEDIA QUERIES */
+/*----------------------------------
+
+              2160PX
+
+-----------------------------------*/
+@media (max-width: 2160px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .section-2 {
+    margin-bottom: 50px;
+  }
+}
+
+/*----------------------------------
+
+              1457PX
+
+-----------------------------------*/
+@media (max-width: 1457px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
 
 /*----------------------------------
 
@@ -414,15 +459,59 @@ body {
 
 /*----------------------------------
 
+              1297PX
+
+-----------------------------------*/
+@media (max-width: 1297px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------------
+
               1250PX
 
 -----------------------------------*/
 @media (max-width: 1250px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
   .section-2 {
     .functions {
       & > div:first-child {
         img {
           height: 72.44px;
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------------
+
+              1222PX
+
+-----------------------------------*/
+@media (max-width: 1222px) {
+  #header {
+    .main-list {
+      li {
+        a {
+          font-size: 14px;
         }
       }
     }
@@ -803,10 +892,10 @@ body {
 
 /*----------------------------------
 
-              476PX
+              477PX
 
 -----------------------------------*/
-@media (max-width: 476px) {
+@media (max-width: 477px) {
   #header {
     .main-list {
       li {
@@ -1012,5 +1101,34 @@ body {
         font-size: 14px;
       }
     }
+  }
+}
+
+/*----------------------------------
+
+              262PX
+
+-----------------------------------*/
+@media (max-width: 262px) {
+  #header {
+    h1 {
+      font-size: 24px;
+    }
+
+    .main-list {
+      li {
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .section-2 {
+    height: 1200px;
+  }
+
+  .footer {
+    width: 100%;
   }
 }

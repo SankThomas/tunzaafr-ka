@@ -1,5 +1,6 @@
 // Back to top button
-let button = document.getElementById('button');
+let button = document.querySelector('#button');
+let header = document.querySelector('#header');
 
 // Remove loading animation when the DOM Content is
 // fully loaded
@@ -9,7 +10,7 @@ window.addEventListener('load', function () {
 });
 
 window.onscroll = function () {
-  displayButton(), changeHeaderColor();
+  displayButton();
 };
 
 function displayButton() {
@@ -23,20 +24,19 @@ function displayButton() {
   }
 }
 
+// changeHeaderColor : Remember to add this to window.onscroll if implemented
+// function changeHeaderColor() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     header.style.backgroundColor = '#00091ae6';
+//   } else {
+//     header.style.backgroundColor = 'transparent';
+//   }
+// }
+
 // Scroll to the top of the document when the user clicks the button
 function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-
-// Change color of the header
-function changeHeaderColor() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    header.style.backgroundColor = '#00091ae6';
-    header.style.padding = '0';
-  } else {
-    header.style.backgroundColor = 'transparent';
-  }
 }
 
 // Change theme color

@@ -23,15 +23,17 @@
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   color: #fff;
   margin-top: 120px;
+  text-align: justify;
   letter-spacing: 1px;
 }
 
 .wrapper h1 {
-  font-size: 36px;
+  font-size: 46px;
+  text-align: center;
 }
 
 .wrapper span {
@@ -40,21 +42,21 @@
 
 .wrapper p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2;
 }
 
 .wrapper ol {
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .wrapper ol h2 {
-  font-size: 30px;
+  font-size: 34px;
   margin-top: 30px;
 }
 
 .wrapper ol h3 {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 10px;
 }
 
@@ -120,10 +122,10 @@
 /*------------------------------------------------
 
 Note: I have used 1fr 1fr instead of 
-  repeat(2, 1fr) and so on for grid because 
-  the compiled css is giving me so many errors
+repeat(2, 1fr) and so on for grid because 
+the compiled css is giving me so many errors
 
---------------------------------------------------*/
+-------------------------------------------------*/
 /* Variables for dark theme */
 /* For light theme */
 * {
@@ -154,7 +156,7 @@ p {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(0, 9, 26, 0.9);
+  background-color: rgba(0, 9, 26, 0.902);
   line-height: 1.5;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -172,7 +174,7 @@ body.light-theme {
 }
 
 body .section-1 .overlay {
-  background-color: rgba(0, 9, 26, 0.9);
+  background-color: rgba(0, 9, 26, 0.902);
 }
 
 body .footer {
@@ -205,7 +207,7 @@ body .footer {
   display: inline-block;
   width: 6px;
   height: 40px;
-  background-color: rgba(0, 9, 26, 0.9);
+  background-color: rgba(0, 9, 26, 0.902);
   margin-right: 4px;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
@@ -247,7 +249,7 @@ body .footer {
   0% {
     -webkit-transform: scaleY(0.1);
             transform: scaleY(0.1);
-    background: rgba(0, 9, 26, 0.9);
+    background: rgba(0, 9, 26, 0.902);
   }
   50% {
     -webkit-transform: scaleY(1);
@@ -257,7 +259,7 @@ body .footer {
   100% {
     -webkit-transform: scaleY(0.1);
             transform: scaleY(0.1);
-    background: rgba(0, 9, 26, 0.9);
+    background: rgba(0, 9, 26, 0.902);
   }
 }
 
@@ -265,7 +267,7 @@ body .footer {
   0% {
     -webkit-transform: scaleY(0.1);
             transform: scaleY(0.1);
-    background: rgba(0, 9, 26, 0.9);
+    background: rgba(0, 9, 26, 0.902);
   }
   50% {
     -webkit-transform: scaleY(1);
@@ -275,7 +277,7 @@ body .footer {
   100% {
     -webkit-transform: scaleY(0.1);
             transform: scaleY(0.1);
-    background: rgba(0, 9, 26, 0.9);
+    background: rgba(0, 9, 26, 0.902);
   }
 }
 
@@ -311,28 +313,25 @@ body .footer {
 
 --------------------------------------- */
 #header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   width: 100%;
-  background-color: transparent;
   opacity: 0.9;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   z-index: 10;
 }
 
-#header a {
-  color: #ffffff;
-}
-
 #header h1 {
-  font-size: 46px;
+  font-size: 56px;
+  text-align: center;
   letter-spacing: 2px;
-  padding: 0 0 10px 0;
   color: #ffffff;
 }
 
@@ -349,14 +348,16 @@ body .footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 23px;
+  padding-bottom: 10px;
 }
 
 #header .main-list li {
   margin-right: 10px;
+  text-align: center;
 }
 
 #header .main-list li a {
+  color: #ffffff;
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -377,19 +378,19 @@ body .footer {
   margin: auto;
   position: relative;
   height: 690px;
-  top: 40%;
+  top: 25%;
   left: 0%;
-  -webkit-transform: translate(0, 40%);
-          transform: translate(0, 40%);
+  -webkit-transform: translate(0, 25%);
+          transform: translate(0, 25%);
   text-align: center;
 }
 
 .showcase h1 {
-  font-size: 46px;
+  font-size: 50px;
 }
 
 .showcase p {
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .showcase .btn {
@@ -428,7 +429,8 @@ body .footer {
 
 .section-1 p {
   margin-top: 70px;
-  font-size: 20px;
+  font-size: 24px;
+  padding: 1%;
 }
 
 /* -------------------------------------
@@ -448,7 +450,7 @@ body .footer {
 }
 
 .section-2 h1 {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 .section-2 h1 span {
@@ -475,6 +477,15 @@ body .footer {
   margin-top: 70px;
 }
 
+.section-2 .functions h3 {
+  font-size: 20px;
+}
+
+.section-2 .functions h4 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
 .section-2 .functions img {
   height: 15%;
   width: 15%;
@@ -486,6 +497,8 @@ body .footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  font-size: 18px;
+  letter-spacing: 0;
   list-style-type: circle;
 }
 
@@ -536,6 +549,31 @@ body .footer {
 /* MEDIA QUERIES */
 /*----------------------------------
 
+              2160PX
+
+-----------------------------------*/
+@media (max-width: 2160px) {
+  #header .main-list li a {
+    font-size: 16px;
+  }
+  .section-2 {
+    margin-bottom: 50px;
+  }
+}
+
+/*----------------------------------
+
+              1457PX
+
+-----------------------------------*/
+@media (max-width: 1457px) {
+  #header .main-list li a {
+    font-size: 15px;
+  }
+}
+
+/*----------------------------------
+
               1440PX
 
 -----------------------------------*/
@@ -547,12 +585,37 @@ body .footer {
 
 /*----------------------------------
 
+              1297PX
+
+-----------------------------------*/
+@media (max-width: 1297px) {
+  #header .main-list li a {
+    font-size: 15px;
+  }
+}
+
+/*----------------------------------
+
               1250PX
 
 -----------------------------------*/
 @media (max-width: 1250px) {
+  #header .main-list li a {
+    font-size: 15px;
+  }
   .section-2 .functions > div:first-child img {
     height: 72.44px;
+  }
+}
+
+/*----------------------------------
+
+              1222PX
+
+-----------------------------------*/
+@media (max-width: 1222px) {
+  #header .main-list li a {
+    font-size: 14px;
   }
 }
 
@@ -820,10 +883,10 @@ body .footer {
 
 /*----------------------------------
 
-              476PX
+              477PX
 
 -----------------------------------*/
-@media (max-width: 476px) {
+@media (max-width: 477px) {
   #header .main-list li a {
     font-size: 12px;
     margin: 0 10px;
@@ -958,5 +1021,25 @@ body .footer {
   }
   .section-2 .functions ol {
     font-size: 14px;
+  }
+}
+
+/*----------------------------------
+
+              262PX
+
+-----------------------------------*/
+@media (max-width: 262px) {
+  #header h1 {
+    font-size: 24px;
+  }
+  #header .main-list li a {
+    font-size: 10px;
+  }
+  .section-2 {
+    height: 1200px;
+  }
+  .footer {
+    width: 100%;
   }
 }
