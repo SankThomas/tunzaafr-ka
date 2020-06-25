@@ -17,8 +17,8 @@ img {
   border-radius: 4px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  -webkit-transform: scale(0.78);
+          transform: scale(0.78);
 }
 
 img:hover {
