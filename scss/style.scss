@@ -188,6 +188,7 @@ body {
   // position: fixed;
   top: 0;
   width: 100%;
+  background-color: $background-color-dark;
   opacity: 0.9;
   @include transition();
   z-index: 10;
