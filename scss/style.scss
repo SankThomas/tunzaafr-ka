@@ -185,13 +185,6 @@ body {
 #header {
   display: flex;
   flex-direction: column;
-  // position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: $background-color-dark;
-  opacity: 0.9;
-  @include transition();
-  z-index: 10;
 
   h1 {
     font-size: 56px;
@@ -210,6 +203,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     padding-bottom: 10px;
+    // position: fixed;
+    top: 13%;
+    width: 100%;
+    opacity: 0.9;
+    @include transition();
+    z-index: 10;
 
     li {
       margin-right: 10px;
@@ -1197,7 +1196,7 @@ body {
 @media (max-width: 400px) {
   #header {
     h1 {
-      font-size: 36px;
+      font-size: 40px;
     }
 
     .main-list {
@@ -1386,7 +1385,7 @@ body {
 @media (max-width: 310px) {
   #header {
     h1 {
-      font-size: 30px;
+      font-size: 36px;
     }
 
     .main-list {
