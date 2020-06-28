@@ -56,10 +56,39 @@
 @media (max-width: 814px) {
   .wrapper {
     padding: 2%;
+
+    ol {
+      padding-left: 2%;
+    }
   }
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    ol {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    ol {
+      font-size: 20px;
+      padding-left: 4%;
+    }
+  }
+}
 /* Reduce h1 size and add padding to ol, 425px and below */
+
 @media (max-width: 425px) {
   .wrapper {
     h1 {

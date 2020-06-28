@@ -8,6 +8,21 @@
 
 .about p {
   font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 7px 100px 50px;
+}
+
+@media (max-width: 343px) {
+  .about p {
+    font-size: 16px;
+    padding: 16px;
+  }
 }
 
 img {
@@ -130,6 +145,28 @@ img:hover {
 @media (max-width: 814px) {
   .wrapper {
     padding: 2%;
+  }
+  .wrapper ol {
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper ol {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper h1 {
+    font-size: 36px;
+  }
+  .wrapper p {
+    font-size: 20px;
+  }
+  .wrapper ol {
+    font-size: 20px;
+    padding-left: 4%;
   }
 }
 
@@ -334,7 +371,7 @@ body .footer {
   padding: 10px;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px 20px 7px;
   z-index: 99;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -377,9 +414,6 @@ body .footer {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 10px;
   top: 13%;
   width: 100%;
@@ -432,11 +466,12 @@ body .footer {
 }
 
 .showcase .btn {
+  cursor: pointer;
   position: relative;
   background-color: #02ca02;
   color: #ffffff;
   padding: 10px 30px;
-  cursor: pointer;
+  border-radius: 7px 100px 50px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -1199,7 +1234,7 @@ body .footer {
     font-size: 18px;
   }
   .showcase .btn {
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-size: 14px;
   }
   .section-2 h1 {

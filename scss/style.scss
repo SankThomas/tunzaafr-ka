@@ -74,12 +74,6 @@ body {
     transition: 1s ease-out;
   }
 
-  // .section-1 {
-  //   .overlay {
-  //     background-color: $background-color-dark;
-  //   }
-  // }
-
   .footer {
     background-color: darken($color: rgba(0, 89, 100, 0.5), $amount: 100%);
   }
@@ -167,7 +161,7 @@ body {
   padding: 10px;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px 20px 7px;
   z-index: 99;
   transition: 0.3s;
 
@@ -201,7 +195,6 @@ body {
   .main-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
     padding-bottom: 10px;
     // position: fixed;
     top: 13%;
@@ -253,11 +246,12 @@ body {
   }
 
   .btn {
+    cursor: pointer;
     position: relative;
     background-color: $button-color;
     color: $button-text-color;
     padding: 10px 30px;
-    cursor: pointer;
+    border-radius: 7px 100px 50px;
     @include transition();
 
     &:hover {
@@ -1408,7 +1402,7 @@ body {
     }
 
     .btn {
-      padding: 5px 10px;
+      padding: 10px 15px;
       font-size: 14px;
     }
   }
