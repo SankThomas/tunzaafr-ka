@@ -2,6 +2,7 @@
 let button = document.querySelector('#button');
 let header = document.querySelector('#header');
 
+
 // Remove loading animation when the DOM Content is
 // fully loaded
 window.addEventListener('load', function () {
